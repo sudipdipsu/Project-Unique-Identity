@@ -1,6 +1,6 @@
 import os
 from flask import render_template, redirect, flash, url_for
-from FormEntry import db,app, login_manager, bcrypt
+from FormEntry import db, app, login_manager, bcrypt
 from FormEntry.forms import RegistrationAccountForm, RegistrationForm, LoginForm, UpdateForm
 from FormEntry.models import Pinfo, User
 from flask_login import login_user, current_user, logout_user, login_required

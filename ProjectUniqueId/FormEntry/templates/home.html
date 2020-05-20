@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block content %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/stylebutton.css')}}">
+    <div class="content-section">
+        {% if current_user.is_authenticated %}
+        <button id="btn-info">Enter Info</button>
+        {% endif %}
+
+        <p>
+            Click <b>Enter info</b> to enter all credentials.<br>
+        or if you have not registered.<br>
+        <b>Register first.  </b></p>
+    </div>
+    {% if current_user.is_authenticated %}
+    <div class="content-section">
+        <h4>For facebook Sign up click below</h4>
+        <a href="{{url_for('fb_signup', id = current_user.id)}}">Facebook</a>
+        <br><br>
+        <p>To enter all data in facebook Sign Up automatically, click <b>Enter Info</b> otherwise,<br>
+        you need to enter manually.</p>
+    </div>
+    {% else %}
+    <div class="content-section">
+        <h4>For facebook Sign up click below</h4>
+        <a href="{{url_for('fb_signup', id = Null)}}">Facebook</a>
+        <br><br>
+        <p>To enter all data in facebook Sign Up automatically, click <b>Enter Info</b> otherwise,<br>
+        you need to enter manually.</p>
+    </div>
+    {% endif %}
+
+
+    <script>
+        const buttons = document.querySelectorAll('#btn-info');
+        buttons.forEach(btn =>{
+            btn.addEventListener('click',function(e){
+                
+                let x = e.clientX - e.target.offsetLeft;
+                let y = e.clientY - e.target.offsetTop;
+
+                console.log(x,y)
+                let ripples = document.createElement('span');
+                ripples.style.left = '115px';
+                ripples.style.top = '25px';
+                this.appendChild(ripples);
+
+                setTimeout(() =>{
+                    ripples.remove()
+                    window.location="http://127.0.0.1:5000/registerform/{{current_user.id}}";
+                },800); 
+                
+            })
+        })
+
+    </script>
+    {% endblock content %}
+

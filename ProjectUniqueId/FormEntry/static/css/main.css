@@ -1,0 +1,204 @@
+body {
+    background: #fafafa;
+    color: #333333;
+    margin-top: 5rem;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+  }
+  
+  .bg-steel {
+    background-color: #5f788a;
+  }
+  
+  .site-header .navbar-nav .nav-link {
+    color: #cbd5db;
+  }
+  
+  .site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+  }
+  
+  .content-section {
+    background: #ffffff;
+    padding: 20px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  
+  .article-title {
+    color: #444444;
+  }
+  
+  a.article-title:hover {
+    color: #428bca;
+    text-decoration: none;
+  }
+  
+  .article-content {
+    white-space: pre-line;
+  }
+  
+  .article-img {
+    height: 55px;
+    width: 55px;
+    margin-right: 16px;
+  }
+  
+  .article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #e3e3e3;
+  }
+  
+  .article-metadata a:hover {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+  }
+  
+  .account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .account-heading {
+    font-size: 2.5rem;
+  }
+
+  .test{
+    color:rgb(226, 43, 43);
+  }
+
+  #time{
+    color:#969696;
+    position: absolute;
+    right: 0px;
+    bottom: 135px;
+    
+  }
+  .media-body1{
+    -ms-flex:1;
+    flex:1;
+    position:relative;
+  }
+
+  .postContent { 
+    position : absolute;
+    right: 0px;
+  }
+
+  .article-title,.article-content{
+    left: 70px;
+    position: relative;
+
+  }
+
+  .rounded-circle1{
+    margin-bottom:1rem;
+    border-radius:50%;
+    position: relative;
+    height: 150px;
+    width: 150px;
+  }
+
+
+
+.btn-update,.btn-cancel,.btn-upd-del{
+  background-color: rgb(121, 120, 120);
+  padding: 5px 7px;
+  border-radius: 5px;
+  color: white;
+  font-family: arial;
+  text-decoration: none;
+  font-size: 13px;
+  border: none;
+  right: 30px;
+  top: 55px;
+  position: absolute;
+  margin: 0px;
+}
+.btn-upd-del{
+  right : 0px;
+  color: white;
+  background-color: rgb(43, 109, 253);
+}
+
+a.btn-update:hover,button.btn-cancel:hover,a.btn-upd-del:hover{
+  text-decoration: none;
+  background-color: rgb(77, 77, 77);
+  color: white;
+  transition: 0.8s;
+  
+}
+.btn-del0,.btn-del1{
+  background-color: rgb(240, 29, 29);
+  padding: 5px 7px;
+  border-radius: 5px;
+  color: white;
+  font-family: arial;
+  text-decoration: none;
+  font-size: 13px;
+  border: none;
+  right: 27px;
+  top: 75px;
+  position: absolute;
+  margin: 0px; 
+}
+
+button.btn-del0:hover,.btn-del1:hover{
+  text-decoration: none;
+  background-color: rgb(175, 0, 0);
+  color: white;
+  transition: 0.8s;
+  
+}
+
+.btn-del1{
+  position: relative;
+  top: 5px;
+  right: 3px;
+  font-size: 14px;
+
+}
+.btn-cancel{
+  position: relative;
+  top: 5px;
+  right:8px;
+  font-size: 14px;
+
+}
+.shift1{
+  position: absolute;
+  right: 0px;
+}
+
+.text-submitted{
+  color: rgb(0, 155, 0);
+}
+
+.form-group-pic{
+  margin-bottom:  1rem;
+  left: 250px;
+  bottom: 10px;
+  position: relative;
+}
+
+#id-name{
+  text-transform: capitalize ;
+}
+
+

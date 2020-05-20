@@ -1,0 +1,13 @@
+from FormEntry import db
+db.create_all()
+from FormEntry.models import Pinfo, User
+user1 = User(username='sudip', email='s@p.com', password='qwerty')
+db.session.add(user1)
+user2 = User(username='suraj', email='s@m.com', password='asdfgh')
+db.session.add(user2)
+db.session.commit()
+a = Pinfo(firstname='sudip', lastname='poudel', sex='M')
+db.session.add(a)
+b = Pinfo(firstname='suraj', lastname='magar', sex='M')
+db.session.add(b)
+db.session.commit()
